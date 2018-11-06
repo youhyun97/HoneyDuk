@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+
+gem 'execjs'
+
+gem 'therubyracer', :platforms => :ruby
+
 gem 'devise' # 회원가입/로그인
 
 gem 'carrierwave' # 이미지 업로드
