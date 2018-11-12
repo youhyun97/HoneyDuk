@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DuksungHoneyDuk</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	  <title>DuksungHoneyDuk</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	  <%= csrf_meta_tags %>
+          <%= csp_meta_tag %>
+    	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    	  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-
-    <%= yield %>
+  	<header id="header">
+		<div class="container"><h1><a href="/">꿀먹는 덕새</a></h1></div>
+		<nav>
+			<ul class="menubar">
+				<li><a href="#">home</a></li>									                        <li><%=link_to "꿀떡꿀떡", posts_path %></li>                            
+				<li><a href="#">공지사항</a></li>                                   
+				<li><a href="#">QnA</a></li>                
+				<li><a href="#">의견사항</a></li>										</ul>   <br><br>										                </nav>
+		</div>
+        </header>
+	<%= yield %>
+	<footer>
+		<div class="footer_last"> Copyright © Duksung Univ </div>
+	</footer>
   </body>
 </html>
