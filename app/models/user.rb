@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :post
   has_many :likes
-
+  has_many :comments
   def is_like?(post)
 	  Like.find_by(user_id: self.id, post_id: post.id).present?
   end

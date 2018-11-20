@@ -23,7 +23,7 @@
 <p>
 	<%= form_for [@post, @post.comments.new], remote: true do |f| %>
 		<%= f.text_area :content %>
-		<%= f.submit %>
+		<%= f.submit "댓글작성" %>
 	<% end %>
 </p>
 
