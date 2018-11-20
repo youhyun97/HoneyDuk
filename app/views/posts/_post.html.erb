@@ -6,6 +6,7 @@
 	</div> 
 	<div class="card-action"> 
 		<%= post.likes.size %> 명이 좋아합니다. 
+		<br/>
 		<% if user_signed_in? %>
 			<%= link_to "글보기" , post_path(post.id) %>
 			<% if current_user.is_like?(post) %> 

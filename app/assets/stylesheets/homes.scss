@@ -2,14 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a:link, a:visited {
+a,a:link, a:visited {
 	text-decoration:none;
-	color: black;
-}
-
-body{
-    background-color: #800000;
-    color: white;
+	color: white;
 }
 
 h1{
@@ -26,9 +21,8 @@ div.content {
 	text-align: center;
 	/*background-color: #ffffff;*/
     background-color: rgba( 255, 255,255, 0.8);	
-	height:400px;margin-top: 0px;	
-	border-top: dashed 5px #FFB400;	
-	border-bottom: dashed 5px #FFB400;									
+	height:400px;margin-top: 0px;		
+	padding: 10%;								
 }											
 .content > p {
 	color:black;
@@ -43,7 +37,9 @@ div.content {
 	font-size: 25px;
 	margin-left: 50px;
 }					    
-		
+.line{
+	border: dashed 5px #FFB400;
+}	
 div.footer_last{
 	text-align:center;
 	margin-top: 100px;

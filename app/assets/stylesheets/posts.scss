@@ -1,3 +1,58 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card{
+	color: rgb(20,20,20);
+	margin: 2% auto;
+	background-color: white;
+	border: 1px solid gray;
+	padding: 3%;
+	width:300px;
+	max-height: 500px;
+}
+.block{
+	text-align: center;
+	margin-bottom: 3%;
+}
+.submitButton{
+	background-color: white;
+	border: 1px solid #FFB400;
+	padding: 0.5% 1%;
+	color: rgb(20,20,20);
+}
+.searchBox{
+	display: inline-block;
+	background-color: #2f3640;
+	height: 35px;
+	padding: 10px;
+	border-radius: 40px;
+	margin:0px auto;
+}
+.searchtxt{
+	border: none;
+	background: none;
+	outline: none;
+	color:white;
+	padding: 0px;
+	line-height: 35px;
+	font-size: 16px;
+	float: left;
+}
+img.searchbtn{
+	width: 30px;
+	height: 30px;
+}
+button.searchbtn{
+	display: flex;
+	float: right;
+	padding: 2px 4px;
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0);
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background: none;
+	outline: none;
+}

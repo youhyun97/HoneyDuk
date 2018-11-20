@@ -10,18 +10,18 @@
       </ul>
     </div>
   <% end %>
+  <div class="card">
+    <div class="field">
+      <%= form.label :title %>
+      <%= form.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <div class="field">
+      <%= form.label :content %>
+      <%= form.text_area :content %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="block">
+    <%= form.submit "작성", class: "submitButton" %>
   </div>
 <% end %>
